@@ -1,0 +1,222 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: var(--font-inter);
+  --font-space-grotesk: var(--font-space-grotesk);
+  
+  /* Premium Dark Futuristic Palette */
+  --bg: #050507;
+  --surface: #111214;
+  --surface-light: #1a1c23;
+  --border: #1f2128;
+  
+  --cyan: #00e5ff;
+  --cyan-dark: #00b4d8;
+  --gold: #d4af37;
+  --gold-light: #f0d78c;
+  
+  --text-primary: #f5f5f7;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+}
+
+body {
+  font-family: var(--font-inter);
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+/* Display font for headings */
+h1, h2, .font-display {
+  font-family: var(--font-space-grotesk);
+}
+
+/* Futuristic Glassmorphism Cards */
+.glass {
+  background: rgba(17, 18, 20, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.glass:hover {
+  border-color: rgba(0, 229, 255, 0.2);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  transform: translateY(-1px);
+}
+
+/* Electric Cyan + Gold Glow Effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8972e 100%);
+  color: #050507;
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.23, 1.0, 0.32, 1);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #f0d78c 0%, #d4af37 100%);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn-cyan {
+  background: transparent;
+  color: var(--cyan);
+  border: 1px solid var(--cyan);
+  font-weight: 600;
+  transition: all 0.2s cubic-bezier(0.23, 1.0, 0.32, 1);
+}
+
+.btn-cyan:hover {
+  background: rgba(0, 229, 255, 0.1);
+  border-color: var(--cyan);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.25);
+}
+
+/* Premium Section Styling */
+.section {
+  scroll-margin-top: 80px;
+}
+
+/* Animated Underline for Nav */
+.nav-link {
+  position: relative;
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--cyan), var(--gold));
+}
+
+/* Service Card Hover Effects */
+.service-card {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), 
+              box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+              border-color 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 229, 255, 0.3);
+  box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.3),
+              0 0 40px rgba(0, 229, 255, 0.1);
+}
+
+/* How It Works Stepper */
+.step {
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.step.active .step-number {
+  background: var(--cyan);
+  color: #050507;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
+
+/* Testimonial Cards */
+.testimonial {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+}
+
+/* Modal */
+.modal {
+  animation: modalEnter 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Form Inputs - Premium Dark Style */
+.input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 4px rgba(0, 229, 255, 0.1);
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Scrollbar - Dark Premium */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3d47;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4d57;
+}
+
+/* Subtle mesh background for hero */
+.hero-mesh {
+  background-image: 
+    linear-gradient(rgba(0,229,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,255,0.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Gold accent text */
+.accent-gold {
+  color: var(--gold);
+}
+
+/* Responsive typography scale */
+@media (max-width: 640px) {
+  .hero-headline {
+    font-size: 2.75rem;
+    line-height: 1.05;
+  }
+}
