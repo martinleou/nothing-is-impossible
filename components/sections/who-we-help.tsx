@@ -25,7 +25,7 @@ const audiences = [
   {
     icon: Award,
     title: "Established Business Leaders",
-    description: "You&apos;ve built something substantial. Now you want an unfair advantage. We embed next-generation AI into your strategy and leadership.",
+    description: "You've built something substantial. Now you want an unfair advantage. We embed next-generation AI into your strategy and leadership.",
     outcome: "Create defensible moats and 10x decision quality.",
   },
 ];

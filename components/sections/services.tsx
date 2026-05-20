@@ -34,7 +34,7 @@ const services = [
   {
     title: "AI Team Enablement Program",
     short: "Transform your entire organization into an AI-fluent, high-performance machine.",
-    full: "Custom training, playbooks, and change management for leadership teams and departments. We don&apos;t just teach tools — we install new ways of thinking and working that create lasting cultural advantage.",
+    full: "Custom training, playbooks, and change management for leadership teams and departments. We don't just teach tools — we install new ways of thinking and working that create lasting cultural advantage.",
     outcome: "An organization that gets smarter every week.",
   },
   {

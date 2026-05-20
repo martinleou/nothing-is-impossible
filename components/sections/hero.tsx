@@ -38,13 +38,20 @@ export default function Hero() {
         </p>
 
         {/* Button moved up a bit */}
-        <a
-          href="#journey"
-          className="inline-flex items-center gap-4 px-12 py-6 bg-white hover:bg-amber-300 text-black rounded-full text-xl font-medium transition-all duration-300 shadow-2xl group mt-4"
+        <button
+          onClick={() => {
+            const el = document.getElementById('cta');
+            if (el) {
+              const yOffset = -90; // offset for fixed navbar
+              const y = el.getBoundingClientRect().top + window.scrollY + yOffset;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+          }}
+          className="inline-flex items-center gap-4 px-12 py-6 bg-white hover:bg-amber-300 text-black rounded-full text-xl font-medium transition-all duration-300 shadow-2xl group mt-4 cursor-pointer"
         >
           Begin the Journey
           <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
-        </a>
+        </button>
       </div>
 
       {/* Bottom Black Band */}

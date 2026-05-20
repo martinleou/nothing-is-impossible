@@ -44,7 +44,7 @@ export function CTA() {
 
     console.log("Strategy Call Request:", data);
 
-    toast.success("Request received. We&apos;ll be in touch within 4 hours to schedule your call.", {
+    toast.success("Request received. We'll be in touch within 4 hours to schedule your call.", {
       description: "Check your email for a confirmation and calendar link.",
       duration: 6000,
     });
@@ -88,7 +88,7 @@ export function CTA() {
         <div className="pr-4">
           <div className="text-[#00e5ff] text-xs tracking-[2.5px] mb-1">NEXT STEP</div>
           <h3 className="font-display text-4xl tracking-[-1.3px] font-semibold leading-none">Book Your Strategy Call</h3>
-          <p className="text-text-secondary mt-4">Tell us a little about your business. We&apos;ll prepare a customized 30-minute session focused entirely on your opportunities.</p>
+          <p className="text-text-secondary mt-4">Tell us a little about your business. We'll prepare a customized 30-minute session focused entirely on your opportunities.</p>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-5">
@@ -133,7 +133,7 @@ export function CTA() {
           </div>
 
           <div>
-            <label className="text-xs text-text-secondary block mb-1.5">WHAT&apos;S YOUR BIGGEST AI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
+            <label className="text-xs text-text-secondary block mb-1.5">WHAT'S YOUR BIGGEST AI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
             <textarea 
               {...register("challenge")} 
               rows={4}

@@ -16,7 +16,7 @@ export function About() {
             Nothing Is Impossible was founded on a simple but radical premise: every ambitious entrepreneur and business leader deserves access to world-class AI that actually moves the needle on performance and income.
           </p>
           <p>
-            We don&apos;t sell generic tools. We architect custom AI operating systems tailored to your business — systems that multiply output, sharpen decision quality, and create compounding advantages your competitors cannot copy.
+            We don't sell generic tools. We architect custom AI operating systems tailored to your business — systems that multiply output, sharpen decision quality, and create compounding advantages your competitors cannot copy.
           </p>
         </div>
       </div>

@@ -4,14 +4,14 @@ import { Card } from "@/components/ui/card";
 
 const testimonials = [
   {
-    quote: "Nothing Is Impossible didn&apos;t just implement AI — they fundamentally rewired how our leadership team thinks and operates. We&apos;ve seen a 47% increase in output and closed our largest deal in company history using their systems.",
+    quote: "Nothing Is Impossible didn't just implement AI — they fundamentally rewired how our leadership team thinks and operates. We've seen a 47% increase in output and closed our largest deal in company history using their systems.",
     name: "Elena Vasquez",
     role: "Founder & CEO",
     company: "Vanguard Dynamics",
     result: "+47% team output",
   },
   {
-    quote: "I went from drowning in operations to having an AI co-founder that handles 70% of my previous workload. The revenue engine they built for us is now our single biggest growth driver. Best investment I&apos;ve ever made.",
+    quote: "I went from drowning in operations to having an AI co-founder that handles 70% of my previous workload. The revenue engine they built for us is now our single biggest growth driver. Best investment I've ever made.",
     name: "Marcus Chen",
     role: "Founder",
     company: "Aether Labs",
@@ -25,7 +25,7 @@ const testimonials = [
     result: "22 hrs/week reclaimed",
   },
   {
-    quote: "We&apos;ve worked with several AI consultancies. Nothing Is Impossible is in a different league. They delivered working systems in weeks, not months, and the ROI was visible in our P&amp;L within 60 days.",
+    quote: "We've worked with several AI consultancies. Nothing Is Impossible is in a different league. They delivered working systems in weeks, not months, and the ROI was visible in our P&L within 60 days.",
     name: "Thomas Bergmann",
     role: "CEO",
     company: "Nordic Precision Group",
