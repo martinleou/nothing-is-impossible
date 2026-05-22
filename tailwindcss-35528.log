@@ -1,0 +1,57 @@
+2026-05-21T11:31:27.506158Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-05-21T11:31:27.506988Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "C:\\Users\\Proje\\main", pattern: "**/*", negated: false }
+2026-05-21T11:31:27.507690Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-05-21T11:31:27.507707Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "C:\\Users\\Proje\\main" }
+2026-05-21T11:31:27.509012Z  INFO discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.509159Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.512274Z  INFO discover_sources:walk_synchronous: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.512734Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\ui\\card.tsx"
+2026-05-21T11:31:27.512740Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\.git"
+2026-05-21T11:31:27.512777Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\ui\\modal.tsx"
+2026-05-21T11:31:27.512811Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\cta.tsx"
+2026-05-21T11:31:27.512818Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components.json"
+2026-05-21T11:31:27.512853Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\hero.tsx"
+2026-05-21T11:31:27.512865Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\dev.bat"
+2026-05-21T11:31:27.512888Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\how-it-works.tsx"
+2026-05-21T11:31:27.512901Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\eslint.config.mjs"
+2026-05-21T11:31:27.512921Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\services.tsx"
+2026-05-21T11:31:27.512929Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\lib\\utils.ts"
+2026-05-21T11:31:27.512951Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\testimonials.tsx"
+2026-05-21T11:31:27.512963Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\netlify.toml"
+2026-05-21T11:31:27.512982Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\who-we-help.tsx"
+2026-05-21T11:31:27.512996Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\layout\\footer.tsx"
+2026-05-21T11:31:27.513018Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\ui\\button.tsx"
+2026-05-21T11:31:27.513032Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\layout\\navbar.tsx"
+2026-05-21T11:31:27.513055Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\app\\page.tsx"
+2026-05-21T11:31:27.513071Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\components\\sections\\about.tsx"
+2026-05-21T11:31:27.513106Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\README.md"
+2026-05-21T11:31:27.513114Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\package.json"
+2026-05-21T11:31:27.513117Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\next.config.ts"
+2026-05-21T11:31:27.513145Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\postcss.config.mjs"
+2026-05-21T11:31:27.513178Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\start-dev.ps1"
+2026-05-21T11:31:27.513193Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\tsconfig.json"
+2026-05-21T11:31:27.513213Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\app\\layout.tsx"
+2026-05-21T11:31:27.513274Z  INFO tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\tailwind.config.ts"
+2026-05-21T11:31:27.513408Z  INFO discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.513424Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.513431Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.513505Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515028Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515040Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515043Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515046Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-05-21T11:31:27.515090Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "C:\\Users\\Proje\\main\\app\\globals.css"
+2026-05-21T11:31:27.515095Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515099Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515102Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515231Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515235Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515344Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515679Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515684Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515687Z  INFO get_files:discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515766Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.515938Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515943Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: enter
+2026-05-21T11:31:27.515946Z  INFO get_globs:discover_sources: tailwindcss_oxide::scanner: exit
+2026-05-21T11:31:27.519846Z  INFO get_globs: tailwindcss_oxide::scanner: exit
