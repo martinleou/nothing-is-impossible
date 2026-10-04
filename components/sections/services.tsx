@@ -8,39 +8,39 @@ import { ArrowUpRight } from "lucide-react";
 
 const services = [
   {
-    title: "AI Business Operating System Audit",
+    title: "SI Business Operating System Audit",
     short: "Deep diagnostic of your current workflows, decision bottlenecks, and hidden automation opportunities.",
-    full: "A comprehensive 360° audit of your business operations, leadership decision processes, and revenue systems. We deliver a prioritized roadmap with projected ROI for every recommended AI intervention.",
+    full: "A comprehensive 360° audit of your business operations, leadership decision processes, and revenue systems. We deliver a prioritized roadmap with projected ROI for every recommended SI intervention.",
     outcome: "Clear 90-day action plan with quantified impact.",
   },
   {
-    title: "Custom AI Agent Development",
+    title: "Custom SI Agent Development",
     short: "Bespoke intelligent agents trained on your business data, processes, and voice.",
-    full: "We design, train, and deploy production-grade AI agents that handle high-value repetitive work — from sophisticated lead qualification and proposal generation to customer success playbooks and internal knowledge retrieval.",
+    full: "We design, train, and deploy production-grade SI agents that handle high-value repetitive work — from sophisticated lead qualification and proposal generation to customer success playbooks and internal knowledge retrieval.",
     outcome: "Agents that feel like senior team members from day one.",
   },
   {
     title: "Revenue Acceleration Engine",
-    short: "AI-powered systems that multiply pipeline quality, conversion rates, and customer lifetime value.",
-    full: "End-to-end revenue systems combining predictive lead scoring, personalized outreach at scale, intelligent follow-up sequences, and churn prediction — all orchestrated by AI that learns your best customers.",
+    short: "SI-powered systems that multiply pipeline quality, conversion rates, and customer lifetime value.",
+    full: "End-to-end revenue systems combining predictive lead scoring, personalized outreach at scale, intelligent follow-up sequences, and churn prediction — all orchestrated by SI that learns your best customers.",
     outcome: "Predictable, compounding revenue growth.",
   },
   {
-    title: "Executive AI Transformation",
+    title: "Executive SI Transformation",
     short: "Personal operating system redesign for founders and executives who want maximum leverage.",
-    full: "We rebuild how you work — calendar, decision frameworks, research, communication, and strategic planning — with AI as a true co-pilot. Includes 1:1 coaching and system implementation.",
+    full: "We rebuild how you work — calendar, decision frameworks, research, communication, and strategic planning — with SI as a true co-pilot. Includes 1:1 coaching and system implementation.",
     outcome: "You operate at the level of a 10-person strategic team.",
   },
   {
-    title: "AI Team Enablement Program",
-    short: "Transform your entire organization into an AI-fluent, high-performance machine.",
+    title: "SI Team Enablement Program",
+    short: "Transform your entire organization into an SI-fluent, high-performance machine.",
     full: "Custom training, playbooks, and change management for leadership teams and departments. We don't just teach tools — we install new ways of thinking and working that create lasting cultural advantage.",
     outcome: "An organization that gets smarter every week.",
   },
   {
-    title: "Ongoing AI Performance Partnership",
+    title: "Ongoing SI Performance Partnership",
     short: "Continuous optimization, new capability deployment, and strategic advisory.",
-    full: "Retainer relationship for companies that want to stay at the absolute frontier. Monthly strategy sessions, quarterly system audits, early access to new models and techniques, and a dedicated AI architect.",
+    full: "Retainer relationship for companies that want to stay at the absolute frontier. Monthly strategy sessions, quarterly system audits, early access to new models and techniques, and a dedicated SI architect.",
     outcome: "Permanent competitive asymmetry.",
   },
 ];
@@ -52,7 +52,7 @@ export function Services() {
     <section id="services" className="section max-w-7xl mx-auto px-6 py-24">
       <div className="flex flex-col items-center text-center mb-14">
         <div className="uppercase tracking-[3px] text-xs text-[#00e5ff]">WHAT WE DELIVER</div>
-        <h2 className="font-display text-6xl tracking-[-2.8px] font-semibold mt-3">Precision AI systems.<br />Compounding results.</h2>
+        <h2 className="font-display text-6xl tracking-[-2.8px] font-semibold mt-3">Precision SI systems.<br />Compounding results.</h2>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
