@@ -7,17 +7,17 @@ const steps = [
   {
     number: "01",
     title: "Discovery & Opportunity Mapping",
-    description: "We dive deep into your business model, bottlenecks, and ambitions. Together we identify the highest-leverage opportunities for AI to create asymmetric advantage.",
+    description: "We dive deep into your business model, bottlenecks, and ambitions. Together we identify the highest-leverage opportunities for SI to create asymmetric advantage.",
   },
   {
     number: "02",
-    title: "Deep AI Readiness Audit",
+    title: "Deep SI Readiness Audit",
     description: "Comprehensive analysis of your data, processes, team capabilities, and technology stack. We surface quick wins and long-term strategic bets.",
   },
   {
     number: "03",
     title: "Custom Strategy & Architecture",
-    description: "We design your bespoke AI operating system — specific agents, workflows, integrations, and governance. You receive a clear roadmap with timelines and expected ROI.",
+    description: "We design your bespoke SI operating system — specific agents, workflows, integrations, and governance. You receive a clear roadmap with timelines and expected ROI.",
   },
   {
     number: "04",
@@ -49,25 +49,24 @@ export function HowItWorks() {
               <button
                 key={index}
                 onClick={() => setActiveStep(index)}
-                className={`step w-full text-left p-6 rounded-2xl border transition-all flex gap-6 group ${
-                  activeStep === index 
+                className={`step w-full text-left p-6 rounded-2xl border transition-all flex gap-6 group ${activeStep === index 
                     ? "border-[#00e5ff] bg-[#111214]" 
                     : "border-white/10 hover:border-white/20"
                 }`}
               >
-                <div className={`step-number font-display text-4xl font-semibold tracking-tighter transition-colors shrink-0 ${
-                  activeStep === index ? "text-[#050507]" : "text-white/30 group-hover:text-white/60"
-                }`}>
+                <div className={`step-number font-display text-4xl font-semibold tracking-tighter transition-colors shrink-0 ${activeStep === index ? "text-[#050507]" : "text-white/30 group-hover:text-white/60"}`
+                }>
                   {step.number}
                 </div>
                 <div>
-                  <div className={`font-semibold text-xl tracking-tight transition-colors ${activeStep === index ? "text-white" : "text-white/80"}`}>
+                  <div className={`font-semibold text-xl tracking-tight transition-colors ${activeStep === index ? "text-white" : "text-white/80"}`
+                  }>
                     {step.title}
                   </div>
                   {activeStep === index && (
                     <motion.p 
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
+                      initial={{ opacity: 0 }} 
+                      animate={{ opacity: 1 }} 
                       className="text-sm text-text-secondary mt-3 leading-relaxed"
                     >
                       {step.description}
