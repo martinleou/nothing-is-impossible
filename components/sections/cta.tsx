@@ -71,7 +71,7 @@ export function CTA() {
 
         <Button 
           variant="gold" 
-          size="lg" 
+          size="lg"
           onClick={() => setIsModalOpen(true)}
           className="text-lg px-14 h-14"
         >
@@ -133,12 +133,12 @@ export function CTA() {
           </div>
 
           <div>
-            <label className="text-xs text-text-secondary block mb-1.5">WHAT'S YOUR BIGGEST AI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
+            <label className="text-xs text-text-secondary block mb-1.5">WHAT'S YOUR BIGGEST SI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
             <textarea 
               {...register("challenge")} 
               rows={4}
               className="input w-full rounded-2xl px-5 py-4 text-base resize-y min-h-[108px]" 
-              placeholder="We’re growing fast but our sales process is still manual. I’m spending too much time on low-leverage tasks..."
+              placeholder="We're growing fast but our sales process is still manual. I'm spending too much time on low-leverage tasks..."
             />
             {errors.challenge && <p className="text-red-400 text-xs mt-1.5">{errors.challenge.message}</p>}
           </div>
@@ -146,7 +146,7 @@ export function CTA() {
           <Button 
             type="submit" 
             variant="gold" 
-            size="lg" 
+            size="lg"
             className="w-full mt-2 h-14 text-base"
             disabled={isSubmitting}
           >
