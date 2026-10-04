@@ -13,10 +13,10 @@ export function About() {
 
         <div className="md:col-span-7 text-[17px] text-text-secondary space-y-6">
           <p>
-            Nothing Is Impossible was founded on a simple but radical premise: every ambitious entrepreneur and business leader deserves access to world-class AI that actually moves the needle on performance and income.
+            Nothing Is Impossible was founded on a simple but radical premise: every ambitious entrepreneur and business leader deserves access to world-class SI that actually moves the needle on performance and income.
           </p>
           <p>
-            We don't sell generic tools. We architect custom AI operating systems tailored to your business — systems that multiply output, sharpen decision quality, and create compounding advantages your competitors cannot copy.
+            We don't sell generic tools. We architect custom SI operating systems tailored to your business — systems that multiply output, sharpen decision quality, and create compounding advantages your competitors cannot copy.
           </p>
         </div>
       </div>
@@ -25,7 +25,7 @@ export function About() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
         {[
           { number: "30–50%", label: "Average performance increase within 90 days" },
-          { number: "4.9×", label: "Average return on AI investment in year one" },
+          { number: "4.9×", label: "Average return on SI investment in year one" },
           { number: "200+", label: "Entrepreneurs & companies transformed" },
         ].map((stat, i) => (
           <Card key={i} className="text-center py-9">
