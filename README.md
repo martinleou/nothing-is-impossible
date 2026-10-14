@@ -1,8 +1,8 @@
 # Nothing Is Impossible
 
-**Maximizing Human Potential with AI**
+**Maximizing Human Potential with Superintelligence (SI)**
 
-Premium single-page landing website for Nothing Is Impossible — the elite AI transformation partner for ambitious entrepreneurs and business leaders.
+Premium single-page landing website for Nothing Is Impossible — the elite SI transformation partner for ambitious entrepreneurs and business leaders.
 
 ## Design
 

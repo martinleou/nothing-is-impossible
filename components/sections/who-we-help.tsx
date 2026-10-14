@@ -7,25 +7,25 @@ const audiences = [
   {
     icon: Users,
     title: "Solo Entrepreneurs & Founders",
-    description: "You wear every hat. We build AI that gives you leverage equivalent to a 10-person team — without the overhead.",
+    description: "You wear every hat. We build SI that gives you leverage equivalent to a 10-person team — without the overhead.",
     outcome: "Reclaim 15–25 hours/week and focus on high-leverage work.",
   },
   {
     icon: TrendingUp,
     title: "Small Business Owners (5–25 employees)",
-    description: "Your team is stretched thin. We implement AI systems that automate operations, sales, and customer experience at scale.",
+    description: "Your team is stretched thin. We implement SI systems that automate operations, sales, and customer experience at scale.",
     outcome: "Achieve enterprise-level efficiency with a lean team.",
   },
   {
     icon: Building2,
     title: "Scaling Companies (25–100 employees)",
-    description: "Growth is creating complexity. We design AI-powered operating systems that maintain velocity while improving margins.",
+    description: "Growth is creating complexity. We design SI-powered operating systems that maintain velocity while improving margins.",
     outcome: "Scale revenue without proportional increase in headcount.",
   },
   {
     icon: Award,
     title: "Established Business Leaders",
-    description: "You've built something substantial. Now you want an unfair advantage. We embed next-generation AI into your strategy and leadership.",
+    description: "You've built something substantial. Now you want an unfair advantage. We embed next-generation SI into your strategy and leadership.",
     outcome: "Create defensible moats and 10x decision quality.",
   },
 ];

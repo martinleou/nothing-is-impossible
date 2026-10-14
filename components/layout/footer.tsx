@@ -10,7 +10,7 @@ export function Footer() {
             <span className="font-display font-semibold tracking-[-0.02em] text-xl">NOTHING IS IMPOSSIBLE</span>
           </div>
           <p className="max-w-xs text-text-secondary text-[15px]">
-            Maximizing human potential through precision AI systems for ambitious entrepreneurs and business leaders.
+            Maximizing human potential through precision SI systems for ambitious entrepreneurs and business leaders.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export function Footer() {
             <div className="space-y-2.5 text-text-secondary">
               <a href="#testimonials" className="block hover:text-white transition">Client Results</a>
               <div className="block text-text-muted">Case Studies (Coming Soon)</div>
-              <div className="block text-text-muted">AI Playbook</div>
+              <div className="block text-text-muted">SI Playbook</div>
             </div>
           </div>
           <div>
@@ -49,7 +49,7 @@ export function Footer() {
       </div>
 
       <div className="mt-16 pt-8 border-t border-white/10 text-center text-xs text-text-muted max-w-7xl mx-auto px-6">
-        Precision AI for those who refuse to accept limits.
+        Precision SI for those who refuse to accept limits.
       </div>
     </footer>
   );

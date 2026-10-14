@@ -19,14 +19,14 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nothing-is-impossible.vercel.app"),
-  title: "Nothing Is Impossible | Maximizing Human Potential with AI",
-  description: "We help entrepreneurs and business owners boost performance and income using cutting-edge AI. Transform your business with precision AI systems designed for ambitious leaders.",
+  title: "Nothing Is Impossible | Maximizing Human Potential with Superintelligence (SI)",
+  description: "We help entrepreneurs and business owners boost performance and income using cutting-edge SI. Transform your business with precision SI systems designed for ambitious leaders.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Nothing Is Impossible | Maximizing Human Potential with AI",
-    description: "Premium AI transformation for entrepreneurs and business owners who refuse to settle for average.",
+    title: "Nothing Is Impossible | Maximizing Human Potential with Superintelligence (SI)",
+    description: "Premium SI transformation for entrepreneurs and business owners who refuse to settle for average.",
     images: [{ url: "/sunrise-earth.jpg" }],
   },
 };
