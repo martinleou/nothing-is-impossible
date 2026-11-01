@@ -8,7 +8,7 @@ const audiences = [
     icon: Users,
     title: "Stuck on Strategy",
     description: "“I have the drive, but I don’t know what to prioritize.”",
-    outcome: "We isolate the one or two moves that will actually move the needle — not a long plan you’ll never open.",
+    outcome: "We isolate the one or two moves that will actually move the needle, not a long plan you’ll never open.",
   },
   {
     icon: TrendingUp,
@@ -20,7 +20,7 @@ const audiences = [
     icon: Building2,
     title: "Stuck on Sales",
     description: "“Leads come in, but they don’t convert the way they should.”",
-    outcome: "We fix the gap between interest and commitment — the conversations, the follow-up, and the close.",
+    outcome: "We fix the gap between interest and commitment: the conversations, the follow-up, and the close.",
   },
   {
     icon: Award,

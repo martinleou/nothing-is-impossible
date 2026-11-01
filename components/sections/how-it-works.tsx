@@ -19,42 +19,42 @@ const steps: ProcessStep[] = [
     short:
       "A focused conversation to get past symptoms and identify the real bottleneck holding you back.",
     overview: [
-      "Most entrepreneurs come in with a sense of what the problem is — but the real bottleneck is often one level deeper.",
+      "Most entrepreneurs come in with a sense of what the problem is, but the real bottleneck is often one level deeper.",
       "In this first step we have a focused conversation (not a long form or questionnaire). We listen carefully, ask the right questions, and get past the symptoms to identify the actual constraint that is holding growth back.",
-      "By the end of this step you have clear visibility on where you are truly stuck — and why previous efforts may not have produced the results you expected.",
+      "By the end of this step you have clear visibility on where you are truly stuck, and why previous efforts may not have produced the results you expected.",
     ],
   },
   {
     number: "02",
     title: "We isolate your next step",
     short:
-      "Using SI to cut through the noise, we identify the one or two moves that will create real momentum.",
+      "Using SI to focus on what matters, we identify the one or two moves that will create real momentum.",
     overview: [
       "Once we know the real bottleneck, the next challenge is choosing the right move.",
-      "Most businesses get overwhelmed by long lists of things they “should” do. We use SI and practical analysis to cut through the noise and isolate the one or two highest-impact actions that will create real momentum.",
-      "You leave this step with a clear, focused next step — not a 40-page plan that never gets opened.",
+      "Most businesses get overwhelmed by long lists of things they “should” do. We use SI and practical analysis to isolate the one or two highest-impact actions that will create real momentum.",
+      "You leave this step with one clear next step, not a 40-page plan that never gets opened.",
     ],
   },
   {
     number: "03",
     title: "We build it with you",
     short:
-      "Whatever the next step requires — strategy, marketing, sales, or systems — we work alongside you to get it built and running, using SI to move faster.",
+      "Whatever the next step requires (strategy, marketing, sales, or systems), we work alongside you to get it built and running, using SI to move faster.",
     overview: [
       "A clear next step only creates results when it is actually built and put into motion.",
-      "In this step we work alongside you to implement whatever is needed — whether that is strategy, marketing and visibility, sales systems, or SI-supported execution. We use cutting-edge SI to move faster than either of us could alone, while keeping everything practical and grounded in your real business.",
-      "The goal is simple: the important work gets done and starts producing results.",
+      "In this step we work alongside you to implement whatever is needed, whether that is strategy, marketing and visibility, sales systems, or SI-supported execution. We use cutting-edge SI to move faster than either of us could alone, while keeping everything practical and grounded in your real business.",
+      "The important work gets done and starts producing results.",
     ],
   },
   {
     number: "04",
     title: "We find the next one",
     short:
-      "Once you’re moving, we go back to the start — finding the next barrier and the next high-impact step so growth keeps compounding.",
+      "Once you’re moving, we go back to the start and find the next barrier and the next high-impact step so growth keeps compounding.",
     overview: [
       "Growth exposes new barriers. What worked at one stage of the business often becomes the constraint at the next.",
       "In this step we stay with you and return to the beginning of the process at a higher level. We identify the next barrier holding growth back and the next high-impact step that will clear it.",
-      "This keeps momentum compounding — so progress doesn’t stall after the first breakthrough.",
+      "This keeps momentum going, so progress doesn’t stall after the first breakthrough.",
     ],
   },
 ];

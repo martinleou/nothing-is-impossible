@@ -12,7 +12,7 @@ const results = [
   {
     outcome: "Root-Cause Growth",
     detail:
-      "Known for isolating the real underlying barriers to expansion — whether leadership, systems, marketing, sales, or people — and delivering rapid, measurable growth.",
+      "Known for isolating the real underlying barriers to expansion, whether leadership, systems, marketing, sales, or people, and delivering rapid, measurable growth.",
   },
 ];
 

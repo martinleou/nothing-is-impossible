@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl lg:text-2xl text-slate-100 font-light max-w-2xl md:max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]">
-          We help ambitious entrepreneurs and visionary business leaders use cutting-edge Super Intelligence (SI) to dramatically increase their companies&apos; production and income — taking their companies to levels of prosperity and scale that once seemed impossible.
+          We help ambitious entrepreneurs and business leaders use cutting-edge Super Intelligence (SI) to increase their companies&apos; production and income, taking their companies to levels of prosperity and scale that once seemed impossible.
         </p>
 
         {/* Button — high-tech premium style */}

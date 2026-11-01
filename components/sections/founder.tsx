@@ -26,13 +26,13 @@ export function Founder() {
               Martin-Leo Uvizl is the founder of Nothing Is Impossible.
             </p>
             <p>
-              For more than 20 years he has helped entrepreneurs and business leaders turn ambitious goals into real, measurable results. His work has focused on practical growth: finding the real constraints holding companies back, implementing the right programs, and helping them reach levels of scale that previously felt out of reach — across leadership, marketing, sales, systems, and people.
+              For more than 20 years he has helped entrepreneurs and business leaders turn ambitious goals into real, measurable results. His work has focused on practical growth: finding the real constraints holding companies back, implementing the right programs, and helping them reach levels of scale that previously felt out of reach, across leadership, marketing, sales, systems, and people.
             </p>
             <p>
               He is also a Senior Implementation Strategist to AI District Consulting.
             </p>
             <p>
-              “I help entrepreneurs take production and income to a whole new level with cutting-edge SI — while keeping their judgment and creativity firmly in the center.”
+              “I help entrepreneurs take production and income to a whole new level with advanced SI, while keeping their judgment and creativity firmly in the center.”
             </p>
           </div>
         </div>

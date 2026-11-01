@@ -15,10 +15,10 @@ const services: Service[] = [
   {
     title: "SI Business Clarity Audit",
     short:
-      "A focused look at where you are actually stuck — operations, bottlenecks, priorities, and opportunities. You leave knowing the highest-impact next moves.",
+      "A focused look at where you are actually stuck: operations, bottlenecks, priorities, and opportunities. You leave knowing the highest-impact next moves.",
     detail: [
       "Most entrepreneurs feel busy but unclear on what will actually move the needle.",
-      "In this focused audit we look at your current operations, bottlenecks, priorities, and opportunities. We cut through the noise and identify the highest-impact places where SI can create real gains — fast.",
+      "In this focused audit we look at your current operations, bottlenecks, priorities, and opportunities. We cut through the noise and identify the highest-impact places where SI can create real gains, fast.",
       "You leave with clear priorities and a practical roadmap of the next moves that will increase production and income.",
     ],
   },
@@ -28,22 +28,21 @@ const services: Service[] = [
       "We build SI agents that take over repetitive and time-consuming work so you and your team can focus on the decisions and relationships that drive growth.",
     detail: [
       "Repetitive and time-consuming work is one of the biggest hidden drains on growth.",
-      "We design and build SI agents that fit the way your business actually works. These agents take over the tasks that slow you and your team down — so you can focus on the decisions, relationships, and creative work that drive results.",
+      "We design and build SI agents that fit the way your business actually works. These agents take over the tasks that slow you and your team down, so you can focus on the decisions, relationships, and creative work that drive results.",
       "The goal is simple: more output in less time, with less friction.",
     ],
   },
   {
     title: "Revenue & Sales Acceleration",
     short:
-      "SI systems that help you generate better leads, close more deals, and increase the value of each customer — without needing a bigger team.",
+      "SI systems that help you generate better leads, close more deals, and increase the value of each customer, without needing a bigger team.",
     detail: [
       "Many small and growing businesses face one of two core problems:",
       "They don’t have enough qualified leads coming in, or",
       "Leads come in but don’t convert well enough (and customer value stays lower than it could be).",
       "We build SI systems that can help with both.",
       "For businesses that need more leads, we use SI to improve visibility, outreach, and lead generation so more of the right people find you.",
-      "For businesses that already get attention, we improve conversion, follow-up, and customer value — so more of those leads turn into real revenue without needing a larger sales team.",
-      "The focus is practical revenue growth, not complexity.",
+      "For businesses that already get attention, we improve conversion, follow-up, and customer value. That way more of those leads turn into revenue without needing a larger sales team.",
     ],
   },
   {
@@ -53,7 +52,6 @@ const services: Service[] = [
     detail: [
       "As a founder or leader, your time and attention are the most valuable resources in the company.",
       "We create SI support that helps you get more of the important work done in less time, make clearer decisions faster, and free up mental space for the creative and future-oriented work only you can do.",
-      "This is about leverage for the person at the center of the business.",
     ],
   },
   {
@@ -62,7 +60,6 @@ const services: Service[] = [
     detail: [
       "SI only creates lasting results when the whole team knows how to use it well.",
       "We train and equip your people to work effectively with SI in their daily tasks. The goal is that the gains spread across the company instead of staying limited to one person or department.",
-      "This turns SI from a tool into a real capability of the business.",
     ],
   },
   {

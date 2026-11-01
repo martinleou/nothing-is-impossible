@@ -23,7 +23,7 @@ const ogImage = {
   url: ogImageUrl,
   width: 1200,
   height: 630,
-  alt: "Nothing Is Impossible — cutting-edge SI to increase production and income",
+  alt: "Nothing Is Impossible: advanced SI to increase production and income",
   type: "image/jpeg",
 };
 
