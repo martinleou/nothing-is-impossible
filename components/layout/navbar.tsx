@@ -4,13 +4,15 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#who-we-help", label: "Who We Help" },
+  { href: "#impact", label: "Impact" },
+  { href: "#who-we-help", label: "Breaking Through" },
   { href: "#services", label: "Services" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#testimonials", label: "Results" },
+  { href: "#how-it-works", label: "The Process" },
+  { href: "#founder", label: "Founder" },
 ];
 
 export function Navbar() {
@@ -23,15 +25,17 @@ export function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      // Active section detection
-      const sections = navLinks.map(link => link.href.substring(1));
+      // Active section: the section nearest the nav (among those scrolled past the top)
+      const sections = navLinks.map((link) => link.href.substring(1));
       let current = "";
+      let nearestTop = -Infinity;
 
       for (const sectionId of sections) {
         const section = document.getElementById(sectionId);
         if (section) {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= 120) {
+          const { top } = section.getBoundingClientRect();
+          if (top <= 120 && top > nearestTop) {
+            nearestTop = top;
             current = sectionId;
           }
         }
@@ -74,10 +78,18 @@ export function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-7 h-7 rounded-full bg-gradient-to-br from-[#00e5ff] to-[#d4af37]" />
+          <div className="w-7 h-7 rounded-full overflow-hidden ring-1 ring-[#00e5ff]/30 ring-offset-1 ring-offset-[#050507] flex-shrink-0">
+            <Image 
+              src="/sunrise-earth.jpg" 
+              alt="Sunrise Earth from space" 
+              width={28} 
+              height={28} 
+              className="object-cover w-full h-full" 
+            />
+          </div>
           <div>
             <div className="font-display font-semibold tracking-[-0.02em] text-xl">NOTHING IS IMPOSSIBLE</div>
-            <div className="text-[10px] text-text-muted -mt-1.5">EST 2018</div>
+            <div className="text-[10px] text-text-muted -mt-1.5">EST 2026</div>
           </div>
         </div>
 
@@ -100,7 +112,7 @@ export function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button 
-            variant="gold" 
+            variant="cyan" 
             size="sm"
             onClick={() => scrollTo("#cta")}
           >
@@ -131,7 +143,7 @@ export function Navbar() {
             </button>
           ))}
           <Button 
-            variant="gold" 
+            variant="cyan" 
             className="mt-4 w-full"
             onClick={() => scrollTo("#cta")}
           >

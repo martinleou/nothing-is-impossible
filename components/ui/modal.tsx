@@ -49,18 +49,24 @@ export function Modal({ isOpen, onClose, children, className }: ModalProps) {
             exit={{ opacity: 0, scale: 0.96, y: 20 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
             className={cn(
-              "glass relative w-full max-w-lg rounded-3xl border border-white/10 p-8 shadow-2xl",
+              "glass relative w-full max-w-lg max-h-[92dvh] md:max-h-[85vh] rounded-3xl border border-white/10 shadow-2xl flex flex-col overflow-hidden",
               className
             )}
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Close Button - larger and more prominent on mobile */}
             <button
               onClick={onClose}
-              className="absolute right-6 top-6 rounded-full p-2 text-text-secondary transition hover:bg-white/5 hover:text-white"
+              className="absolute right-4 top-4 z-10 rounded-full p-2.5 text-text-secondary bg-[#050507]/80 backdrop-blur-sm transition hover:bg-[#050507] hover:text-white md:right-6 md:top-6"
+              aria-label="Close modal"
             >
-              <X size={18} />
+              <X size={20} />
             </button>
-            {children}
+
+            {/* Scrollable content area */}
+            <div className="flex-1 overflow-y-auto p-6 pt-12 md:p-8 md:pt-8">
+              {children}
+            </div>
           </motion.div>
         </div>
       )}

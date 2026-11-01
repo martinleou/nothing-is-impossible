@@ -6,37 +6,43 @@ import { Card } from "@/components/ui/card";
 const audiences = [
   {
     icon: Users,
-    title: "Solo Entrepreneurs & Founders",
-    description: "You wear every hat. We build AI that gives you leverage equivalent to a 10-person team — without the overhead.",
-    outcome: "Reclaim 15–25 hours/week and focus on high-leverage work.",
+    title: "Stuck on Strategy",
+    description: "“I have the drive, but I don’t know what to prioritize.”",
+    outcome: "We isolate the one or two moves that will actually move the needle — not a long plan you’ll never open.",
   },
   {
     icon: TrendingUp,
-    title: "Small Business Owners (5–25 employees)",
-    description: "Your team is stretched thin. We implement AI systems that automate operations, sales, and customer experience at scale.",
-    outcome: "Achieve enterprise-level efficiency with a lean team.",
+    title: "Stuck on Marketing & Visibility",
+    description: "“I know I have something valuable, but the right people aren’t finding me.”",
+    outcome: "We sharpen your positioning and messaging with SI so your offer becomes obvious to the people who need it.",
   },
   {
     icon: Building2,
-    title: "Scaling Companies (25–100 employees)",
-    description: "Growth is creating complexity. We design AI-powered operating systems that maintain velocity while improving margins.",
-    outcome: "Scale revenue without proportional increase in headcount.",
+    title: "Stuck on Sales",
+    description: "“Leads come in, but they don’t convert the way they should.”",
+    outcome: "We fix the gap between interest and commitment — the conversations, the follow-up, and the close.",
   },
   {
     icon: Award,
-    title: "Established Business Leaders",
-    description: "You've built something substantial. Now you want an unfair advantage. We embed next-generation AI into your strategy and leadership.",
-    outcome: "Create defensible moats and 10x decision quality.",
+    title: "Stuck on Execution",
+    description: "“I know what needs to be done, I just can’t get it all done.”",
+    outcome: "We build practical systems and SI support so the important work actually gets finished.",
   },
 ];
 
 export function WhoWeHelp() {
   return (
-    <section id="who-we-help" className="section bg-[#0a0b10] py-20 border-y border-white/10">
+    <section id="who-we-help" className="section bg-[#0a0b10] py-16 md:py-20 border-y border-white/10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-14">
-          <div className="uppercase text-xs tracking-[3px] text-[#00e5ff] mb-2">WHO WE SERVE</div>
-          <h2 className="font-display text-6xl tracking-[-2.6px] font-semibold">Ambitious leaders who refuse average</h2>
+        <div className="text-center mb-8">
+          <div className="uppercase text-xs tracking-[3px] text-[#00e5ff] mb-2">Turning Obstacles into Momentum</div>
+          <h2 className="font-display text-5xl md:text-6xl tracking-[-2.6px] font-semibold">Where are you stuck?</h2>
+        </div>
+
+        <div className="max-w-3xl mx-auto mb-8 md:mb-9 text-center">
+          <p className="text-[15px] md:text-[16px] text-text-secondary leading-snug">
+            Here are some of the ways we can help you find your way through.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -49,7 +55,7 @@ export function WhoWeHelp() {
                 </div>
                 <h3 className="font-semibold text-2xl tracking-tight mb-4">{item.title}</h3>
                 <p className="text-[15px] text-text-secondary flex-grow leading-relaxed">{item.description}</p>
-                <div className="mt-7 pt-6 border-t border-white/10 text-sm text-[#d4af37] font-medium">
+                <div className="mt-7 pt-6 border-t border-white/10 text-sm text-[#f4d03f] font-medium" style={{ textShadow: '0 0 6px rgba(244, 208, 63, 0.5)' }}>
                   {item.outcome}
                 </div>
               </Card>

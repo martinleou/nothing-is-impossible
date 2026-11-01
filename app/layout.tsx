@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -17,17 +10,59 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const siteUrl = "https://nothingisimpossible.io";
+
+const siteTitle = "Nothing Is Impossible | Cutting-Edge Super Intelligence (SI) for Production and Income";
+const siteDescription =
+  "We help ambitious entrepreneurs and visionary business leaders use cutting-edge Super Intelligence (SI) to dramatically increase their companies' production and income.";
+
+const ogImagePath = "/og-image.jpg";
+const ogImageUrl = `${siteUrl}${ogImagePath}`;
+
+const ogImage = {
+  url: ogImageUrl,
+  width: 1200,
+  height: 630,
+  alt: "Nothing Is Impossible — cutting-edge SI to increase production and income",
+  type: "image/jpeg",
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nothing-is-impossible.vercel.app"),
-  title: "Nothing Is Impossible | Maximizing Human Potential with AI",
-  description: "We help entrepreneurs and business owners boost performance and income using cutting-edge AI. Transform your business with precision AI systems designed for ambitious leaders.",
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
   openGraph: {
-    title: "Nothing Is Impossible | Maximizing Human Potential with AI",
-    description: "Premium AI transformation for entrepreneurs and business owners who refuse to settle for average.",
-    images: [{ url: "/sunrise-earth.jpg" }],
+    title: siteTitle,
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "Nothing Is Impossible",
+    locale: "en_US",
+    type: "website",
+    images: [ogImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [ogImageUrl],
+    creator: "@martinleou",
   },
 };
 
@@ -38,7 +73,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+        />
+      </head>
+      <body
+        className={`${spaceGrotesk.variable} antialiased`}
+        style={{ fontFamily: "Inter, system-ui, sans-serif" }}
+      >
         {children}
         <Toaster 
           position="top-center" 

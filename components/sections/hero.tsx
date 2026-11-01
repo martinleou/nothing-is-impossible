@@ -15,18 +15,18 @@ export default function Hero() {
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-20 pt-20">
         {/* Small branding at top */}
         <div className="text-amber-300/90 text-sm tracking-[4px] mb-6 font-light">
-          EST. 2018
+          EST. 2026
         </div>
 
         <h1 className="text-6xl md:text-7xl lg:text-[4.8rem] font-bold tracking-[-2.5px] text-white leading-none mb-6 drop-shadow-[0_4px_30px_rgba(0,0,0,0.7)]">
           NOTHING IS IMPOSSIBLE
         </h1>
 
-        <p className="text-2xl text-slate-100 font-light max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]">
-          A new dawn of possibilities.
+        <p className="text-lg md:text-xl lg:text-2xl text-slate-100 font-light max-w-2xl md:max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed drop-shadow-[0_2px_15px_rgba(0,0,0,0.6)]">
+          We help ambitious entrepreneurs and visionary business leaders use cutting-edge Super Intelligence (SI) to dramatically increase their companies&apos; production and income — taking their companies to levels of prosperity and scale that once seemed impossible.
         </p>
 
-        {/* Button — kept prominent */}
+        {/* Button — high-tech premium style */}
         <button
           onClick={() => {
             const el = document.getElementById('cta');
@@ -36,16 +36,18 @@ export default function Hero() {
               window.scrollTo({ top: y, behavior: 'smooth' });
             }
           }}
-          className="inline-flex items-center gap-4 px-12 py-6 bg-white hover:bg-amber-300 text-black rounded-full text-xl font-medium transition-all duration-300 shadow-2xl group mt-2 cursor-pointer"
+          className="inline-flex items-center gap-3 px-9 py-4 rounded-full border border-[#00f5ff] text-white text-lg font-medium tracking-[0.5px] transition-all duration-300 hover:bg-[#00f5ff]/10 hover:text-[#00f5ff] hover:border-[#00f5ff] hover:shadow-[0_0_20px_rgba(0,245,255,0.35)] active:scale-[0.985] group mt-2 cursor-pointer"
         >
           Begin the Journey
-          <span className="text-2xl group-hover:translate-x-2 transition-transform">→</span>
+          <span className="text-xl transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#00f5ff]">→</span>
         </button>
       </div>
 
-      {/* Bottom Black Band */}
-      <div className="h-24 bg-[#050507] flex-shrink-0 flex items-center justify-center border-t border-white/10">
-        {/* Empty for now */}
+      {/* Bottom Black Band — Enterprise positioning */}
+      <div className="bg-[#050507] flex-shrink-0 flex items-center justify-center border-t border-white/10 py-6 px-6">
+        <p className="text-center text-sm md:text-base text-amber-300/90 max-w-4xl tracking-[0.5px]">
+          Clear results. Real momentum. No jargon.
+        </p>
       </div>
     </div>
   );
@@ -91,7 +93,7 @@ function VideoBackground() {
       {/* Strong but elegant bottom gradient — protects title and "Begin the Journey" button */}
       <div className="absolute bottom-0 left-0 right-0 h-[55%] bg-gradient-to-t from-[#050507] via-[#050507]/85 to-transparent z-10" />
 
-      {/* Very light top fade for EST. 2018 text */}
+      {/* Very light top fade for EST. 2026 text */}
       <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-[#050507]/20 to-transparent z-10" />
     </>
   );

@@ -39,19 +39,48 @@ export function CTA() {
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
 
-    // Simulate API call (replace with real endpoint or Resend/Loops/etc later)
-    await new Promise((resolve) => setTimeout(resolve, 950));
+    try {
+      // Direct Formspree submission (simple and reliable)
+      const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xnjrkzkp';
 
-    console.log("Strategy Call Request:", data);
+      const formData = new FormData();
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('company', data.company);
+      formData.append('size', data.size);
+      formData.append('timeframe', data.timeframe);
+      formData.append('challenge', data.challenge);
 
-    toast.success("Request received. We'll be in touch within 4 hours to schedule your call.", {
-      description: "Check your email for a confirmation and calendar link.",
-      duration: 6000,
-    });
+      // Helpful Formspree fields
+      formData.append('_subject', `New Strategy Call Request from ${data.name}`);
+      formData.append('_replyto', data.email);
 
-    setIsSubmitting(false);
-    setIsModalOpen(false);
-    reset();
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        toast.success("Request received. We'll be in touch within 24 hours to schedule your call.", {
+          description: "Check your email for a confirmation and calendar link.",
+          duration: 6000,
+        });
+        setIsModalOpen(false);
+        reset();
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error("Something went wrong", {
+        description: "Please try again or email us directly at martin@nothingisimpossible.io",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -59,14 +88,18 @@ export function CTA() {
       <div className="absolute inset-0 bg-[radial-gradient(#1f2128_0.8px,transparent_1px)] bg-[length:3px_3px] opacity-70" />
 
       <div className="relative max-w-3xl mx-auto px-6 text-center">
-        <div className="text-[#d4af37] text-sm tracking-[4px] mb-4">THE NEXT MOVE IS YOURS</div>
+        <div className="text-[#f4d03f] text-sm tracking-[4px] mb-4" style={{ textShadow: '0 0 8px rgba(244, 208, 63, 0.5)' }}>THE NEXT STEP</div>
         
         <h2 className="font-display text-6xl md:text-7xl tracking-[-3.2px] font-semibold leading-none mb-6">
-          Ready to make the<br />impossible possible?
+          Ready to unlock gains in production and income that once seemed impossible?
         </h2>
         
-        <p className="text-2xl text-text-secondary mb-10 max-w-lg mx-auto">
-          Join the leaders who are already operating at a level their competitors cannot match.
+        <p className="text-2xl text-text-secondary mb-6 max-w-2xl mx-auto">
+          If you&apos;re an ambitious entrepreneur who feels stuck and wants to dramatically increase production and income using cutting-edge SI, let&apos;s talk.
+        </p>
+
+        <p className="text-lg text-text-secondary mb-10 max-w-2xl mx-auto">
+          We&apos;ll find where you&apos;re actually stuck, isolate the next high-impact step, and show you how SI can help you move faster.
         </p>
 
         <Button 
@@ -75,23 +108,23 @@ export function CTA() {
           onClick={() => setIsModalOpen(true)}
           className="text-lg px-14 h-14"
         >
-          Book Your Free 30-Minute Strategy Call
+          Book a free 30-minute strategy call
         </Button>
 
         <div className="mt-6 text-xs text-text-muted tracking-wide">
-          100% confidential. No hard sell. Pure strategic value.
+          100% confidential. No hard sell. Just clear thinking and real possibilities.
         </div>
       </div>
 
       {/* Booking Modal with Form */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} className="max-w-[520px]">
-        <div className="pr-4">
+        <div>
           <div className="text-[#00e5ff] text-xs tracking-[2.5px] mb-1">NEXT STEP</div>
           <h3 className="font-display text-4xl tracking-[-1.3px] font-semibold leading-none">Book Your Strategy Call</h3>
-          <p className="text-text-secondary mt-4">Tell us a little about your business. We'll prepare a customized 30-minute session focused entirely on your opportunities.</p>
+          <p className="text-text-secondary mt-3 md:mt-4">Tell us a little about your business. We'll prepare a customized 30-minute session focused entirely on your opportunities.</p>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="mt-8 space-y-5">
+        <form onSubmit={handleSubmit(onSubmit)} className="mt-6 md:mt-8 space-y-4 md:space-y-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
               <label className="text-xs text-text-secondary block mb-1.5">FULL NAME</label>
@@ -133,11 +166,11 @@ export function CTA() {
           </div>
 
           <div>
-            <label className="text-xs text-text-secondary block mb-1.5">WHAT'S YOUR BIGGEST AI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
+            <label className="text-xs text-text-secondary block mb-1.5">WHAT'S YOUR BIGGEST SI / PERFORMANCE CHALLENGE RIGHT NOW?</label>
             <textarea 
               {...register("challenge")} 
-              rows={4}
-              className="input w-full rounded-2xl px-5 py-4 text-base resize-y min-h-[108px]" 
+              rows={3}
+              className="input w-full rounded-2xl px-5 py-3 text-base resize-y min-h-[90px] md:min-h-[108px]" 
               placeholder="We’re growing fast but our sales process is still manual. I’m spending too much time on low-leverage tasks..."
             />
             {errors.challenge && <p className="text-red-400 text-xs mt-1.5">{errors.challenge.message}</p>}
@@ -147,7 +180,7 @@ export function CTA() {
             type="submit" 
             variant="gold" 
             size="lg" 
-            className="w-full mt-2 h-14 text-base"
+            className="w-full mt-2 h-12 md:h-14 text-base"
             disabled={isSubmitting}
           >
             {isSubmitting ? "SUBMITTING REQUEST..." : "REQUEST MY STRATEGY CALL"}

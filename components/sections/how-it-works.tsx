@@ -1,101 +1,133 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { Modal } from "@/components/ui/modal";
+import { ArrowUpRight } from "lucide-react";
 
-const steps = [
+type ProcessStep = {
+  number: string;
+  title: string;
+  short: string;
+  overview: string[];
+};
+
+const steps: ProcessStep[] = [
   {
     number: "01",
-    title: "Discovery & Opportunity Mapping",
-    description: "We dive deep into your business model, bottlenecks, and ambitions. Together we identify the highest-leverage opportunities for AI to create asymmetric advantage.",
+    title: "We find where you’re actually stuck",
+    short:
+      "A focused conversation to get past symptoms and identify the real bottleneck holding you back.",
+    overview: [
+      "Most entrepreneurs come in with a sense of what the problem is — but the real bottleneck is often one level deeper.",
+      "In this first step we have a focused conversation (not a long form or questionnaire). We listen carefully, ask the right questions, and get past the symptoms to identify the actual constraint that is holding growth back.",
+      "By the end of this step you have clear visibility on where you are truly stuck — and why previous efforts may not have produced the results you expected.",
+    ],
   },
   {
     number: "02",
-    title: "Deep AI Readiness Audit",
-    description: "Comprehensive analysis of your data, processes, team capabilities, and technology stack. We surface quick wins and long-term strategic bets.",
+    title: "We isolate your next step",
+    short:
+      "Using SI to cut through the noise, we identify the one or two moves that will create real momentum.",
+    overview: [
+      "Once we know the real bottleneck, the next challenge is choosing the right move.",
+      "Most businesses get overwhelmed by long lists of things they “should” do. We use SI and practical analysis to cut through the noise and isolate the one or two highest-impact actions that will create real momentum.",
+      "You leave this step with a clear, focused next step — not a 40-page plan that never gets opened.",
+    ],
   },
   {
     number: "03",
-    title: "Custom Strategy & Architecture",
-    description: "We design your bespoke AI operating system — specific agents, workflows, integrations, and governance. You receive a clear roadmap with timelines and expected ROI.",
+    title: "We build it with you",
+    short:
+      "Whatever the next step requires — strategy, marketing, sales, or systems — we work alongside you to get it built and running, using SI to move faster.",
+    overview: [
+      "A clear next step only creates results when it is actually built and put into motion.",
+      "In this step we work alongside you to implement whatever is needed — whether that is strategy, marketing and visibility, sales systems, or SI-supported execution. We use cutting-edge SI to move faster than either of us could alone, while keeping everything practical and grounded in your real business.",
+      "The goal is simple: the important work gets done and starts producing results.",
+    ],
   },
   {
     number: "04",
-    title: "Build, Integrate & Launch",
-    description: "Our team builds and deploys production systems with your team. Rigorous testing, change management, and knowledge transfer ensure seamless adoption.",
-  },
-  {
-    number: "05",
-    title: "Measure, Optimize & Scale",
-    description: "We continuously monitor performance, refine models, and expand capabilities. Your system gets smarter and more valuable every month.",
+    title: "We find the next one",
+    short:
+      "Once you’re moving, we go back to the start — finding the next barrier and the next high-impact step so growth keeps compounding.",
+    overview: [
+      "Growth exposes new barriers. What worked at one stage of the business often becomes the constraint at the next.",
+      "In this step we stay with you and return to the beginning of the process at a higher level. We identify the next barrier holding growth back and the next high-impact step that will clear it.",
+      "This keeps momentum compounding — so progress doesn’t stall after the first breakthrough.",
+    ],
   },
 ];
 
-export function HowItWorks() {
-  const [activeStep, setActiveStep] = useState(0);
-
+function StepModalContent({ step }: { step: ProcessStep }) {
   return (
-    <section id="how-it-works" className="section py-20 border-t border-white/10 bg-[#0a0b10]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <div className="text-[#00e5ff] text-xs tracking-[3px]">THE PROCESS</div>
-          <h2 className="font-display text-6xl tracking-[-2.6px] font-semibold mt-3">A proven path to transformation</h2>
-        </div>
+    <div className="relative">
+      <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#00e5ff] via-[#00b4d8] to-[#00e5ff] opacity-20 blur-xl" />
+      <div className="relative border border-[#00e5ff]/40 rounded-2xl p-6 md:p-8 bg-[#050507]">
+        <div className="text-[#00e5ff] text-xs tracking-[2.5px] mb-2">STEP {step.number}</div>
+        <h3 className="font-display text-3xl md:text-4xl leading-[1.05] tracking-[-1.5px] font-semibold pr-8">
+          {step.title}
+        </h3>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
-          {/* Steps List */}
-          <div className="space-y-3">
-            {steps.map((step, index) => (
-              <button
-                key={index}
-                onClick={() => setActiveStep(index)}
-                className={`step w-full text-left p-6 rounded-2xl border transition-all flex gap-6 group ${
-                  activeStep === index 
-                    ? "border-[#00e5ff] bg-[#111214]" 
-                    : "border-white/10 hover:border-white/20"
-                }`}
-              >
-                <div className={`step-number font-display text-4xl font-semibold tracking-tighter transition-colors shrink-0 ${
-                  activeStep === index ? "text-[#050507]" : "text-white/30 group-hover:text-white/60"
-                }`}>
-                  {step.number}
-                </div>
-                <div>
-                  <div className={`font-semibold text-xl tracking-tight transition-colors ${activeStep === index ? "text-white" : "text-white/80"}`}>
-                    {step.title}
-                  </div>
-                  {activeStep === index && (
-                    <motion.p 
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      className="text-sm text-text-secondary mt-3 leading-relaxed"
-                    >
-                      {step.description}
-                    </motion.p>
-                  )}
-                </div>
-              </button>
-            ))}
-          </div>
-
-          {/* Visual / Summary Panel */}
-          <div className="hidden lg:block sticky top-24 glass rounded-3xl p-12 h-fit border border-white/10">
-            <div className="text-xs uppercase tracking-[3px] text-[#00e5ff] mb-6">STEP {steps[activeStep].number}</div>
-            
-            <h3 className="font-display text-[42px] leading-[1.0] tracking-[-1.8px] font-semibold mb-8">
-              {steps[activeStep].title}
-            </h3>
-            
-            <p className="text-lg text-text-secondary">
-              {steps[activeStep].description}
-            </p>
-
-            <div className="mt-12 pt-8 border-t border-white/10 text-sm text-text-muted">
-              Average engagement length: <span className="text-white font-medium">6–14 weeks</span> to full operational deployment.
-            </div>
-          </div>
+        <div className="mt-6 space-y-4 text-[15px] md:text-[16px] leading-relaxed text-text-secondary">
+          {step.overview.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
         </div>
       </div>
+    </div>
+  );
+}
+
+export function HowItWorks() {
+  const [selectedStep, setSelectedStep] = useState<number | null>(null);
+
+  return (
+    <section id="how-it-works" className="section max-w-7xl mx-auto px-6 py-24">
+      <div className="flex flex-col items-center text-center mb-14 max-w-3xl mx-auto">
+        <div className="uppercase tracking-[3px] text-xs text-[#00e5ff]">HOW IT WORKS</div>
+        <h2 className="font-display text-5xl md:text-6xl tracking-[-2.8px] font-semibold mt-3">
+          Four clear steps from stuck to take-off
+        </h2>
+        <p className="mt-6 text-[16px] md:text-[17px] text-text-secondary leading-relaxed">
+          No long strategy decks. Just a clear path from stuck to moving.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-6">
+        {steps.map((step, index) => (
+          <Card
+            key={step.title}
+            className="service-card group flex flex-col cursor-pointer min-h-[220px]"
+            onClick={() => setSelectedStep(index)}
+          >
+            <div className="flex-1">
+              <div className="text-[#00e5ff] text-xs tracking-[2px] mb-2">{step.number}</div>
+              <div className="font-semibold text-xl md:text-2xl tracking-[-0.6px] leading-tight mb-3 group-hover:text-[#00e5ff] transition-colors">
+                {step.title}
+              </div>
+              <p className="text-[14px] md:text-[15px] text-text-secondary leading-relaxed">
+                {step.short}
+              </p>
+            </div>
+            <div className="mt-6 flex items-center justify-between text-sm">
+              <span className="text-[#00e5ff] font-medium">Learn more</span>
+              <ArrowUpRight
+                className="text-[#00e5ff] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition"
+                size={17}
+              />
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <Modal
+        isOpen={selectedStep !== null}
+        onClose={() => setSelectedStep(null)}
+        className="max-w-2xl"
+      >
+        {selectedStep !== null && <StepModalContent step={steps[selectedStep]} />}
+      </Modal>
     </section>
   );
 }
