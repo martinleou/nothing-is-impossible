@@ -91,11 +91,11 @@ export function CTA() {
         <div className="text-[#f4d03f] text-sm tracking-[4px] mb-4" style={{ textShadow: '0 0 8px rgba(244, 208, 63, 0.5)' }}>THE NEXT STEP</div>
         
         <h2 className="font-display text-6xl md:text-7xl tracking-[-3.2px] font-semibold leading-none mb-6">
-          Ready to unlock gains in production and income that once seemed impossible?
+          Ready to unlock gains in productivity and revenue that once seemed impossible?
         </h2>
         
         <p className="text-2xl text-text-secondary mb-6 max-w-2xl mx-auto">
-          If you&apos;re an ambitious entrepreneur who feels stuck and wants to dramatically increase production and income using cutting-edge SI, let&apos;s talk.
+          If you&apos;re an ambitious entrepreneur who feels stuck and wants to increase productivity and revenue using cutting-edge SI, let&apos;s talk.
         </p>
 
         <p className="text-lg text-text-secondary mb-10 max-w-2xl mx-auto">

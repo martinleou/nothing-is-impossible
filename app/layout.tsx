@@ -12,9 +12,9 @@ const spaceGrotesk = Space_Grotesk({
 
 const siteUrl = "https://nothingisimpossible.io";
 
-const siteTitle = "Nothing Is Impossible | Cutting-Edge Super Intelligence (SI) for Production and Income";
+const siteTitle = "Nothing Is Impossible | Cutting-Edge Super Intelligence (SI) for Productivity and Revenue";
 const siteDescription =
-  "We help ambitious entrepreneurs and visionary business leaders use cutting-edge Super Intelligence (SI) to dramatically increase their companies' production and income.";
+  "We help ambitious entrepreneurs and visionary business leaders use cutting-edge Super Intelligence (SI) to dramatically increase their companies' productivity and revenue.";
 
 const ogImagePath = "/og-image.jpg";
 const ogImageUrl = `${siteUrl}${ogImagePath}`;
@@ -23,7 +23,7 @@ const ogImage = {
   url: ogImageUrl,
   width: 1200,
   height: 630,
-  alt: "Nothing Is Impossible: advanced SI to increase production and income",
+  alt: "Nothing Is Impossible: advanced SI to increase productivity and revenue",
   type: "image/jpeg",
 };
 

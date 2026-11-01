@@ -15,7 +15,7 @@ export function About() {
           </p>
           <p>
             Most entrepreneurs don&apos;t need more complex technology.
-            They need tools that actually increase production, income, and scale, fast.
+            They need tools that actually increase productivity, revenue, and scale, fast.
           </p>
           <p>
             We use cutting-edge SI to help ambitious business leaders remove bottlenecks, multiply output, and reach levels of growth that previously felt out of reach, while keeping their judgment, creativity, and leadership firmly in the center.

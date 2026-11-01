@@ -19,7 +19,7 @@ const services: Service[] = [
     detail: [
       "Most entrepreneurs feel busy but unclear on what will actually move the needle.",
       "In this focused audit we look at your current operations, bottlenecks, priorities, and opportunities. We cut through the noise and identify the highest-impact places where SI can create real gains, fast.",
-      "You leave with clear priorities and a practical roadmap of the next moves that will increase production and income.",
+      "You leave with clear priorities and a practical roadmap of the next moves that will increase productivity and revenue.",
     ],
   },
   {
@@ -67,7 +67,7 @@ const services: Service[] = [
     short: "A long-term collaboration focused on continuous improvement. We keep finding the next bottleneck and the next high-impact step as your company grows.",
     detail: [
       "Growth is not a one-time project. New bottlenecks appear as the company scales.",
-      "In an ongoing partnership we keep watching results, refining the systems, and identifying the next high-impact step. You get continuous improvement and a trusted partner who stays focused on increasing production and income as the business grows.",
+      "In an ongoing partnership we keep watching results, refining the systems, and identifying the next high-impact step. You get continuous improvement and a trusted partner who stays focused on increasing productivity and revenue as the business grows.",
     ],
   },
 ];
@@ -128,7 +128,7 @@ export function Services() {
           Precision systems for real momentum
         </h2>
         <p className="mt-6 text-[16px] md:text-[17px] text-text-secondary leading-relaxed">
-          We help ambitious entrepreneurs and leaders achieve breakthroughs in production and income by finding the real bottleneck and the next high-impact moves.
+          We help ambitious entrepreneurs and leaders achieve breakthroughs in productivity and revenue by finding the real bottleneck and the next high-impact moves.
         </p>
       </div>
 

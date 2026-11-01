@@ -32,7 +32,7 @@ export function Founder() {
               He is also a Senior Implementation Strategist to AI District Consulting.
             </p>
             <p>
-              “I help entrepreneurs take production and income to a whole new level with advanced SI, while keeping their judgment and creativity firmly in the center.”
+              “I help entrepreneurs take productivity and revenue to a whole new level with advanced SI, while keeping their judgment and creativity firmly in the center.”
             </p>
           </div>
         </div>
