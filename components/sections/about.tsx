@@ -18,7 +18,7 @@ export function About() {
             They need tools that actually increase production, income, and scale — fast.
           </p>
           <p>
-            We use cutting-edge SI to help ambitious business leaders remove bottlenecks, multiply output, and reach levels of growth that previously felt out of reach — while keeping their judgment, creativity, and leadership firmly in the center.
+            We use cutting-edge SI to help ambitious business leaders remove bottlenecks, multiply output, and reach levels of growth that previously felt out of reach — while keeping their judgment and creativity firmly in the center.
           </p>
           <p>
             Clear results. Real momentum. No jargon.
